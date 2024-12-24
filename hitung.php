@@ -289,7 +289,7 @@ $hasil_bobot = get_hasil_bobot($data);
         function get_chart1()
         {
             global $db;
-            $rows = $db->get_results("SELECT * FROM tb_alternatif ORDER BY kode_alternatif");
+            $rows = $db->get_results("SELECT * FROM tb_alternatif ORDER BY total DESC");
 
             foreach ($rows as $row) {
                 $data[$row->nama_alternatif] = $row->total * 1;
@@ -298,7 +298,7 @@ $hasil_bobot = get_hasil_bobot($data);
             $chart = array();
 
             // Mengubah jenis chart menjadi 'line' (grafik garis)
-            $chart['chart']['type'] = 'line'; 
+            $chart['chart']['type'] = 'column'; 
             $chart['title']['text'] = 'Grafik Hasil Perangkingan';
             $chart['xAxis'] = array(
                 'categories' => array_keys($data),
