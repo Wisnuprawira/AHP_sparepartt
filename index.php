@@ -146,13 +146,16 @@ if (empty($_SESSION['login']))
 		<div class="dropdown">
 			<a href="javascript:void(0)" onclick="toggleDropdown(event)" class="dropdown-toggle"><span class="glyphicon glyphicon-th-large"></span> AHP</a>
 			<div class="dropdown-content">
-				<a href="?m=kriteria"><span class="glyphicon glyphicon-th-large"></span> Kriteria</a>
-				<a href="?m=sub"><span class="glyphicon glyphicon-user"></span> Subkriteria</a>
+				<!-- <a href="?m=kriteria"><span class="glyphicon glyphicon-th-large"></span> Kriteria</a>
+				<a href="?m=sub"><span class="glyphicon glyphicon-user"></span> Subkriteria</a> -->
 			</div>
 		</div>
+		<a href="?m=kriteria"><span class="glyphicon glyphicon-th-large"></span> Kriteria</a>
+		<a href="?m=sub"><span class="glyphicon glyphicon-user"></span> Subkriteria</a>
 		<a href="?m=rel_kriteria"><span class="glyphicon glyphicon-th-large"></span> Nilai Bobot Kriteria</a>
 		<a href="?m=rel_sub"><span class="glyphicon glyphicon-user"></span> Nilai Bobot Subkriteria</a>
 		<a href="?m=rel_alternatif"><span class="glyphicon glyphicon-user"></span> Nilai Bobot Alternatif</a>
+		<a href="?m=alternatif"><span class="glyphicon glyphicon-calendar"></span> alternatif</a>
 		<a href="?m=hitung"><span class="glyphicon glyphicon-calendar"></span> Perhitungan</a>
 
 		<!-- Dropdown for SAW -->
