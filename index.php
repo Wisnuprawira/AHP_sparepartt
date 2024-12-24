@@ -13,7 +13,7 @@ if (empty($_SESSION['login']))
 	<link rel="icon" href="favicon.ico" />
 	<link rel="icon" href="favicon.ico" />
 
-	<title>Source Code SPK Metode AHP dengan CRIPS (Subkriteria)</title>
+	<title>Tugas Akhir Zamzam </title>
 	<link href="assets/css/sandstone-bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/general.css" rel="stylesheet" />
 	<script src="assets/js/jquery.min.js"></script>
@@ -193,9 +193,8 @@ if (empty($_SESSION['login']))
 		<!-- Chart -->
 		<div id="chart1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-	</div>
-
-	<script type="text/javascript">
+		</div>
+		<script type="text/javascript">
 		$(function() {
 			$('#chart1').highcharts(<?= json_encode(get_chart1()) ?>);
 		})
