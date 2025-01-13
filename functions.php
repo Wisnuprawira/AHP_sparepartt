@@ -25,6 +25,15 @@ function is_able($mod)
             'rel_alternatif',
             'hitung',
         ),
+        'manager' => array(
+            'user',
+            'alternatif',
+            'kriteria',
+            'kriteria_saw',
+            'nilai',
+            'rel_alternatif',
+            'hitung',
+        ),
         'guest' => array(),
     );
     if (!_session('level'))
@@ -302,6 +311,7 @@ function get_level_option($selected = '')
     $arr = array(
         'admin' => 'Admin',
         'user' => 'User',
+        'manager' => 'Manager',
     );
     $a = '';
     foreach ($arr as $key => $val) {

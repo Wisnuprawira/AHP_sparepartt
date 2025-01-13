@@ -297,7 +297,7 @@ $hasil_bobot = get_hasil_bobot($data);
                     <th>Ranking</th>
                     <th>Kode</th>
                     <th>Nama</th>
-                    <th>Total</th>
+                    <th>Hasil Bobot</th>
                 </tr>
             </thead>
             <?php
@@ -334,4 +334,18 @@ $hasil_bobot = get_hasil_bobot($data);
         <p>Jadi pilihan terbaik adalah <strong><?= $ALTERNATIF[$best] ?></strong> dengan nilai <strong><?= round($total[$best], 3) ?></strong></p>
         <p><a class="btn btn-default" target="_blank" href="cetak.php?m=hitung"><span class="glyphicon glyphicon-print"></span> Cetak</a></p>
     </div>
+    
 </div>
+<?php if (_session('level') === 'manager'): ?>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" id="approved_by_manager" name="approved_by_manager" value="1"> Approved by Manager
+        </label>
+    </div>
+<?php else: ?>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" id="approved_by_manager" name="approved_by_manager" value="1" disabled> Approved by Manager (Only accessible by Manager)
+        </label>
+    </div>
+<?php endif; ?>
